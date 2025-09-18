@@ -7,6 +7,7 @@ body {
     margin: 0px;
     font-family: Verdana, Tahoma, sans-serif;
     background-color: #F7F7F7;
+    color: #202020;
 }
 
 h1 {
@@ -49,4 +50,29 @@ img {
     background-color: #F7F7F7;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
+}
+
+iframe {
+    display: block;
+    width: 80%;
+    height: 75vh;
+    margin: 1em auto;
+}
+
+#content {
+    width: 60%;
+    margin: 2em auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.75em;
+    font-weight: 500;
+}
+
+.sponsor-message {
+    text-align: right;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 0.5em;
 }
