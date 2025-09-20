@@ -28,7 +28,7 @@ h1 {
     align-items: flex-end;
 }
 
-img {
+header img {
     padding: 5px 20px;
 }
 
@@ -87,11 +87,15 @@ h2 {
     grid-template-areas: 
         "image name name name name pronouns"
         "image roles roles roles roles roles"
+        "image bio bio bio bio bio"
+        "image bio bio bio bio bio"
         "image bio bio bio bio bio";
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 1em;
-    padding: 1em;
+    padding: 1.25em;
+    row-gap: 0.25em;
+    column-gap: 1em;
 }
 
 .member-right {
@@ -99,30 +103,38 @@ h2 {
     grid-template-areas: 
         "name name name name pronouns image"
         "roles roles roles roles roles image"
+        "bio bio bio bio bio image"
+        "bio bio bio bio bio image"
         "bio bio bio bio bio image";
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 1em;
-    padding: 1em;
+    padding: 1.25em;
+    row-gap: 0.25em;
+    column-gap: 1em;
 }
 
 .name {
     grid-area: name;
     font-size: 1.5em;
-    margin: 0.5em 0;
+    align-self: end;
 }
 
 .pronouns {
     grid-area: pronouns;
+    align-self: end;
 }
 
 .roles {
     grid-area: roles;
-    color: #ABABAB;
+    color: #959595;
+    border-bottom: 1.5px solid #959595;
+    padding-bottom: 3px;
 }
 
 .image {
     grid-area: image;
+    max-height: 250px;
 }
 
 .bio {
